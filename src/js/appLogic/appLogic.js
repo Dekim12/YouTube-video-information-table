@@ -4,7 +4,7 @@ const checkSearchValues = (query, count) => {
   query = query.replace(/^\s+|\s+$/g, '');
   if (query === '' || parseInt(query) === 'number' || count < 0) {
     count = 0;
-  } else if(count > 50) {
+  } else if (count > 50) {
     count = 50;
   }
   return [query, count];
